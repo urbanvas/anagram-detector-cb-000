@@ -7,14 +7,14 @@ class Anagram
     @word = word
   end
 
-  def match(list) 
+  def match(list)
   results = []
-  list.each do |e| 
+  list.each do |e|
     if e.chars.sort.join == @word.chars.sort.join
       results << e
-    end 
-  end 
-  results  
+    end
+  end
+  results
 end 
 
 
